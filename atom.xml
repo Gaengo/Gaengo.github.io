@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-12T13:33:08.141Z</updated>
+  <updated>2020-06-12T13:35:21.785Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,30 +17,17 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/06/12/test/"/>
-    <id>http://yoursite.com/2020/06/12/test/</id>
-    <published>2020-06-12T13:32:56.000Z</published>
-    <updated>2020-06-12T13:33:08.141Z</updated>
+    <title>hadoop高可用安装</title>
+    <link href="http://yoursite.com/2020/06/12/hadoop%E9%AB%98%E5%8F%AF%E7%94%A8%E5%AE%89%E8%A3%85/"/>
+    <id>http://yoursite.com/2020/06/12/hadoop%E9%AB%98%E5%8F%AF%E7%94%A8%E5%AE%89%E8%A3%85/</id>
+    <published>2020-06-12T13:34:47.000Z</published>
+    <updated>2020-06-12T13:35:21.785Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;123&lt;/p&gt;
-&lt;p&gt;123&lt;/p&gt;
-&lt;p&gt;12&lt;/p&gt;
-&lt;p&gt;31&lt;/p&gt;
-&lt;p&gt;23&lt;/p&gt;
-&lt;p&gt;12&lt;/p&gt;
-&lt;p&gt;31&lt;/p&gt;
-&lt;p&gt;3&lt;/p&gt;
-&lt;p&gt;13&lt;/p&gt;
-
-        
-      
+      &lt;h1 id=&quot;hadoop高可用安装&quot;&gt;&lt;a href=&quot;#hadoop高可用安装&quot; class=&quot;headerlink&quot; title=&quot;hadoop高可用安装&quot;&gt;&lt;/a&gt;hadoop高可用安装&lt;/h1&gt;&lt;h3 id=&quot;HA-amp-Federation介绍&quot;&gt;&lt;a href=&quot;#HA-amp-Federation介绍&quot; class=&quot;headerlink&quot; title=&quot;HA &amp;amp; Federation介绍&quot;&gt;&lt;/a&gt;&lt;strong&gt;HA &amp;amp;&lt;/strong&gt; Federation介绍&lt;/h3&gt;&lt;h4 id=&quot;HDFS-2-0-HA&quot;&gt;&lt;a href=&quot;#HDFS-2-0-HA&quot; class=&quot;headerlink&quot; title=&quot;HDFS 2.0 HA&quot;&gt;&lt;/a&gt;&lt;strong&gt;HDFS&lt;/strong&gt; &lt;strong&gt;2.0&lt;/strong&gt; HA&lt;/h4&gt;&lt;p&gt;•主备NameNode&lt;/p&gt;
+&lt;p&gt;•解决单点故障（属性，位置）&lt;/p&gt;
+&lt;p&gt;​    •主NameNode对外提供服务，备NameNode同步主NameNode元数据，以待切换&lt;/p&gt;
     
     </summary>
     
