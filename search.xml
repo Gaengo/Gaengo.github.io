@@ -179,7 +179,35 @@
 <img src="https://i.loli.net/2020/06/14/NinuftbBLx9TjMK.png" alt="wordcount.png" style="zoom:50%;" />
 
 <p>关闭集群</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node01: stop-dfs.sh </span><br><span class="line">node01: stop-yarn.sh (停止nodemanager)</span><br><span class="line">node03,node04: yarn-daemon.sh stop resourcemanager</span><br><span class="line">Node02、03、04：zkServer.sh stop</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">node01</span></span><br><span class="line">stop-dfs.sh </span><br><span class="line"><span class="meta">#</span><span class="bash">node01</span></span><br><span class="line">stop-yarn.sh #(停止nodemanager)</span><br><span class="line"><span class="meta">#</span><span class="bash">node03,node04</span></span><br><span class="line">yarn-daemon.sh stop resourcemanager</span><br><span class="line"><span class="meta">#</span><span class="bash">Node02、03、04</span></span><br><span class="line">zkServer.sh stop</span><br></pre></td></tr></table></figure>
+
+<h4 id="在windows下配置hadoop的环境"><a href="#在windows下配置hadoop的环境" class="headerlink" title="在windows下配置hadoop的环境"></a>在windows下配置hadoop的环境</h4><p>更改环境变量，增加HADOOP_HOME</p>
+<img src="https://i.loli.net/2020/06/14/cfpalVhKrzMTCX7.png" alt="hadoophome.png" style="zoom:50%;" />
+
+<p>并在path中添加HADOOP_HOME中添加路径</p>
+<p><img src="https://i.loli.net/2020/06/14/i2jZlU7bI4DF8n9.png" alt="path.png"></p>
+<p>然后再新建一个变量HADOOP_USER_NAME</p>
+<img src="https://i.loli.net/2020/06/14/fQOB3phunimjeq6.png" alt="hausername.png" style="zoom:50%;" />
+
+<p>把hadoop.dll拷贝到以下路径</p>
+<img src="https://i.loli.net/2020/06/14/pmDhHLFuYIeW3o6.png" alt="dll.png" style="zoom:50%;" />
+
+<p>安装eclipse-mars，并调出Map/Reduce Locations</p>
+<img src="https://i.loli.net/2020/06/14/cREADHkt6WXxdlC.png" alt="mpr2.png" style="zoom:50%;" />
+
+<p>新建一个hadoop localtion（Host：哪个namenode是active，就填哪个；port：8020）</p>
+<img src="https://i.loli.net/2020/06/14/HtKocPUafSikhxn.png" alt="mpr.png" style="zoom: 67%;" />
+
+<p>在eclipse里导入自己建一个包库，并把jar包导入刚建的包库</p>
+<img src="https://i.loli.net/2020/06/14/TqvPNpiX6uGHmEc.png" alt="jar.png" style="zoom:50%;" />
+
+<p><img src="https://i.loli.net/2020/06/14/8sAvYp2qDxLHKGe.png" alt="buildp.png"></p>
+<img src="https://i.loli.net/2020/06/14/iJSOn7qA1PlcxF2.png" alt="joinin.png" style="zoom: 67%;" />
+
+<p>利用xftp把hdfs-site.xml,core-site.xml等几个xml放到project的src目录。</p>
+<img src="https://i.loli.net/2020/06/14/UvFsc3o8CrxS14t.png" alt="xftp.png" style="zoom:50%;" />
+
+]]></content>
       <categories>
         <category>大数据</category>
       </categories>
