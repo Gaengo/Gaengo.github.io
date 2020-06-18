@@ -163,7 +163,7 @@
 
 <p>安装hadoop</p>
 <p><code>cd /opt</code>,将其下的gf目录分发到node02、03、04</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp –r  ldy/ node02:`pwd`</span><br><span class="line">scp –r  ldy/ node03:`pwd`</span><br><span class="line">scp –r  ldy/ node04:`pwd`</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp –r  gf/ node02:`pwd`</span><br><span class="line">scp –r  gf/ node03:`pwd`</span><br><span class="line">scp –r  gf/ node04:`pwd`</span><br></pre></td></tr></table></figure>
 
 <p>将hdfs-site.xml和core-site.xml分发到node02、03、04</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">scp hdfs-site.xml core-site.xml node02:`pwd`</span><br><span class="line">scp hdfs-site.xml core-site.xml node03:`pwd`</span><br><span class="line">scp hdfs-site.xml core-site.xml node04:`pwd`</span><br></pre></td></tr></table></figure>
@@ -179,7 +179,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp zoo_sample.cfg zoo.cfg</span><br></pre></td></tr></table></figure>
 
 <p>vi zoo.cfg</p>
-<p>改dataDir=/var/ldy/zk</p>
+<p>改dataDir=/var/gf/zk</p>
 <p> 并在末尾追加</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server.1&#x3D;node02:2888:3888</span><br><span class="line"></span><br><span class="line">server.2&#x3D;node03:2888:3888</span><br><span class="line"></span><br><span class="line">server.3&#x3D;node04:2888:3888</span><br></pre></td></tr></table></figure>
 
@@ -272,7 +272,7 @@
 <p><img src="https://i.loli.net/2020/06/14/62hq4PKwZdQCibR.png" alt="22.png"></p>
 <p><img src="https://i.loli.net/2020/06/14/H2O9V4alwC8ZBGy.png" alt="33.png"></p>
 <p><img src="https://i.loli.net/2020/06/14/Z8XQL5crgzHGOpC.png" alt="44.png"></p>
-<h3 id="运行wordcount测试"><a href="#运行wordcount测试" class="headerlink" title="运行wordcount测试"></a>运行wordcount测试</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/ldy/hadoop-2.6.5/share/hadoop/mapreduce</span><br></pre></td></tr></table></figure>
+<h3 id="运行wordcount测试"><a href="#运行wordcount测试" class="headerlink" title="运行wordcount测试"></a>运行wordcount测试</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /opt/gf/hadoop-2.6.5/share/hadoop/mapreduce</span><br></pre></td></tr></table></figure>
 
 <p>在hdfs里建立输入目录和输出目录</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hdfs dfs -mkdir -p /data/in</span><br><span class="line">hdfs dfs -mkdir -p /data/out</span><br></pre></td></tr></table></figure>
